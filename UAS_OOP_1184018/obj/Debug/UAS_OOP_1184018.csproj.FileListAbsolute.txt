@@ -1,0 +1,12 @@
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.csprojResolveAssemblyReference.cache
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.Home.resources
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.Program_Studi_View_Data.resources
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.Program_Studi.resources
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.csproj.GenerateResource.Cache
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\bin\Debug\UAS_OOP_1184018.dll
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\bin\Debug\UAS_OOP_1184018.pdb
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.dll
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.pdb
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.Mahasiswa.resources
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.ViewMahasiswa.resources
+c:\users\asus\documents\visual studio 2015\Projects\UAS_OOP_1184018\UAS_OOP_1184018\obj\Debug\UAS_OOP_1184018.ViewProdi.resources
