@@ -17,14 +17,8 @@ namespace UAS_OOP_1184018
             InitializeComponent();
         }
 
-            
-
-        private void tsView_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void InputMhsMenuItem_Click(object sender, EventArgs e)
+        //Input
+        private void InputMhsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Mahasiswa newMahasiswa = new Mahasiswa();
             newMahasiswa.MdiHome = this;
@@ -33,12 +27,13 @@ namespace UAS_OOP_1184018
 
         private void InputProdiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Program_Studi newProgram = new Program_Studi();
+            ProgramStudi newProgram = new ProgramStudi();
             newProgram.MdiHome = this;
             newProgram.Show();
         }
 
-        private void ViewMhsToolStripMenuItem_Click(object sender, EventArgs e)
+        //View
+        private void ViewMhsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ViewMahasiswa newMahasiswa = new ViewMahasiswa();
             newMahasiswa.MdiHome = this;
@@ -51,6 +46,28 @@ namespace UAS_OOP_1184018
             newProgram.MdiHome = this;
             newProgram.Show();
         }
-    }
 
+        //Update
+        private void UpdateMhsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateMahasiswa newMahasiswa = new UpdateMahasiswa();
+            newMahasiswa.MdiHome = this;
+            newMahasiswa.Show();
+        }
+
+        private void UpdateProdiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateProdi newProgram = new UpdateProdi();
+            newProgram.MdiHome = this;
+            newProgram.Show();
+        }
+
+        //Transaksi
+        private void DaftarUlangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DaftarUlang newProgram = new DaftarUlang();
+            newProgram.MdiHome = this;
+            newProgram.Show();
+        }
+    }
 }

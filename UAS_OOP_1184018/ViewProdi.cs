@@ -13,44 +13,58 @@ namespace UAS_OOP_1184018
 {
     public partial class ViewProdi : Form
     {
-        private SqlCommand sc;
-        private DataSet ds;
-        private SqlDataAdapter sda;
-
-        Connection connection = new Connection();
-
         public ViewProdi()
         {
             InitializeComponent();
         }
 
-        private void showData()
+        private DataSet ds_Prodi;
+
+        public DataSet CreateProdiDataSet()
         {
-            SqlConnection conn = connection.GetConn();
+            DataSet myDataSet = new DataSet();
+
             try
             {
-                conn.Open();
-                sc = new SqlCommand("SELECT * FROM ms_prodi", conn);
-                ds = new DataSet();
-                sda = new SqlDataAdapter(sc);
-                sda.Fill(ds, "ms_prodi");
-                dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "ms_prodi";
-                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                SqlConnection myConnection = new SqlConnection(@"Data Source=NAOMI-CHT\SQLEXPRESS; Initial Catalog = UAS; Integrated Security = True");
+
+
+                SqlCommand myCommand = new SqlCommand();
+
+
+                myCommand.Connection = myConnection;
+
+
+                myCommand.CommandText = "SELECT * FROM ms_prodi";
+                myCommand.CommandType = CommandType.Text;
+
+
+                SqlDataAdapter myDataAdapter = new SqlDataAdapter();
+                myDataAdapter.SelectCommand = myCommand;
+                myDataAdapter.TableMappings.Add("Table", "Prodi");
+
+
+                myDataAdapter.Fill(myDataSet);
             }
-            catch (Exception G)
+            catch (Exception ex)
             {
-                MessageBox.Show(G.ToString());
+                MessageBox.Show(ex.ToString());
             }
-            finally
-            {
-                conn.Close();
-            }
+
+            return myDataSet;
         }
-        
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            RefreshDataSet();
+        }
+
+        private void RefreshDataSet()
+        {
+            ds_Prodi = CreateProdiDataSet();
+
+            dgProdi.DataSource = ds_Prodi.Tables["Prodi"];
+        }
     }
-
-    
-     
-
 }

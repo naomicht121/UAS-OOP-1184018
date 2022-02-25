@@ -28,50 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsInput = new System.Windows.Forms.ToolStripDropDownButton();
-            this.InputMhsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tsInput = new System.Windows.Forms.ToolStripMenuItem();
+            this.InputMhsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InputProdiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsView = new System.Windows.Forms.ToolStripDropDownButton();
-            this.ViewMhsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsView = new System.Windows.Forms.ToolStripMenuItem();
+            this.ViewMhsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ViewProdiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsTransaksi = new System.Windows.Forms.ToolStripLabel();
-            this.tsUpdate = new System.Windows.Forms.ToolStripDropDownButton();
-            this.mahasiswaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prodiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1.SuspendLayout();
+            this.tsUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.UpdateMhsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.UpdateProdiToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsTransaksi = new System.Windows.Forms.ToolStripMenuItem();
+            this.DaftarUlangToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // toolStrip1
+            // menuStrip1
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsInput,
             this.tsView,
             this.tsUpdate,
             this.tsTransaksi});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(713, 27);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(841, 28);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // tsInput
             // 
             this.tsInput.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.InputMhsMenuItem,
+            this.InputMhsToolStripMenuItem,
             this.InputProdiToolStripMenuItem});
             this.tsInput.Name = "tsInput";
-            this.tsInput.Size = new System.Drawing.Size(57, 24);
-            this.tsInput.Text = "I&nput";
+            this.tsInput.Size = new System.Drawing.Size(55, 24);
+            this.tsInput.Text = "Input";
             // 
-            // InputMhsMenuItem
+            // InputMhsToolStripMenuItem
             // 
-            this.InputMhsMenuItem.Name = "InputMhsMenuItem";
-            this.InputMhsMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.InputMhsMenuItem.Text = "Mahasiswa";
-            this.InputMhsMenuItem.Click += new System.EventHandler(this.InputMhsMenuItem_Click);
+            this.InputMhsToolStripMenuItem.Name = "InputMhsToolStripMenuItem";
+            this.InputMhsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.InputMhsToolStripMenuItem.Text = "Mahasiswa";
+            this.InputMhsToolStripMenuItem.Click += new System.EventHandler(this.InputMhsToolStripMenuItem_Click);
             // 
             // InputProdiToolStripMenuItem
             // 
@@ -82,23 +83,19 @@
             // 
             // tsView
             // 
-            this.tsView.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tsView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ViewMhsToolStripMenuItem,
+            this.ViewMhsToolStripMenuItem1,
             this.ViewProdiToolStripMenuItem1});
-            this.tsView.Image = ((System.Drawing.Image)(resources.GetObject("tsView.Image")));
-            this.tsView.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsView.Name = "tsView";
-            this.tsView.Size = new System.Drawing.Size(55, 24);
-            this.tsView.Text = "&View";
-            this.tsView.Click += new System.EventHandler(this.tsView_Click);
+            this.tsView.Size = new System.Drawing.Size(53, 24);
+            this.tsView.Text = "View";
             // 
-            // ViewMhsToolStripMenuItem
+            // ViewMhsToolStripMenuItem1
             // 
-            this.ViewMhsToolStripMenuItem.Name = "ViewMhsToolStripMenuItem";
-            this.ViewMhsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.ViewMhsToolStripMenuItem.Text = "Mahasiswa";
-            this.ViewMhsToolStripMenuItem.Click += new System.EventHandler(this.ViewMhsToolStripMenuItem_Click);
+            this.ViewMhsToolStripMenuItem1.Name = "ViewMhsToolStripMenuItem1";
+            this.ViewMhsToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.ViewMhsToolStripMenuItem1.Text = "Mahasiswa";
+            this.ViewMhsToolStripMenuItem1.Click += new System.EventHandler(this.ViewMhsToolStripMenuItem1_Click);
             // 
             // ViewProdiToolStripMenuItem1
             // 
@@ -107,44 +104,55 @@
             this.ViewProdiToolStripMenuItem1.Text = "Prodi";
             this.ViewProdiToolStripMenuItem1.Click += new System.EventHandler(this.ViewProdiToolStripMenuItem1_Click);
             // 
-            // tsTransaksi
-            // 
-            this.tsTransaksi.Name = "tsTransaksi";
-            this.tsTransaksi.Size = new System.Drawing.Size(68, 24);
-            this.tsTransaksi.Text = "&Transaksi";
-            // 
             // tsUpdate
             // 
             this.tsUpdate.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mahasiswaToolStripMenuItem,
-            this.prodiToolStripMenuItem});
+            this.UpdateMhsToolStripMenuItem2,
+            this.UpdateProdiToolStripMenuItem2});
             this.tsUpdate.Name = "tsUpdate";
-            this.tsUpdate.Size = new System.Drawing.Size(72, 24);
-            this.tsUpdate.Text = "&Update";
+            this.tsUpdate.Size = new System.Drawing.Size(70, 24);
+            this.tsUpdate.Text = "Update";
             // 
-            // mahasiswaToolStripMenuItem
+            // UpdateMhsToolStripMenuItem2
             // 
-            this.mahasiswaToolStripMenuItem.Name = "mahasiswaToolStripMenuItem";
-            this.mahasiswaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.mahasiswaToolStripMenuItem.Text = "Mahasiswa";
+            this.UpdateMhsToolStripMenuItem2.Name = "UpdateMhsToolStripMenuItem2";
+            this.UpdateMhsToolStripMenuItem2.Size = new System.Drawing.Size(181, 26);
+            this.UpdateMhsToolStripMenuItem2.Text = "Mahasiswa";
+            this.UpdateMhsToolStripMenuItem2.Click += new System.EventHandler(this.UpdateMhsToolStripMenuItem_Click);
             // 
-            // prodiToolStripMenuItem
+            // UpdateProdiToolStripMenuItem2
             // 
-            this.prodiToolStripMenuItem.Name = "prodiToolStripMenuItem";
-            this.prodiToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.prodiToolStripMenuItem.Text = "Prodi";
+            this.UpdateProdiToolStripMenuItem2.Name = "UpdateProdiToolStripMenuItem2";
+            this.UpdateProdiToolStripMenuItem2.Size = new System.Drawing.Size(181, 26);
+            this.UpdateProdiToolStripMenuItem2.Text = "Prodi";
+            this.UpdateProdiToolStripMenuItem2.Click += new System.EventHandler(this.UpdateProdiToolStripMenuItem_Click);
+            // 
+            // tsTransaksi
+            // 
+            this.tsTransaksi.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.DaftarUlangToolStripMenuItem1});
+            this.tsTransaksi.Name = "tsTransaksi";
+            this.tsTransaksi.Size = new System.Drawing.Size(80, 24);
+            this.tsTransaksi.Text = "Transaksi";
+            // 
+            // DaftarUlangToolStripMenuItem1
+            // 
+            this.DaftarUlangToolStripMenuItem1.Name = "DaftarUlangToolStripMenuItem1";
+            this.DaftarUlangToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.DaftarUlangToolStripMenuItem1.Text = "Daftar Ulang ";
+            this.DaftarUlangToolStripMenuItem1.Click += new System.EventHandler(this.DaftarUlangToolStripMenuItem_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 468);
-            this.Controls.Add(this.toolStrip1);
+            this.ClientSize = new System.Drawing.Size(841, 482);
+            this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.Name = "Home";
-            this.Text = "Home";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.Text = "HOME";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,16 +160,18 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripDropDownButton tsInput;
-        private System.Windows.Forms.ToolStripMenuItem InputMhsMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tsInput;
+        private System.Windows.Forms.ToolStripMenuItem InputMhsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem InputProdiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripLabel tsTransaksi;
-        private System.Windows.Forms.ToolStripDropDownButton tsView;
-        private System.Windows.Forms.ToolStripMenuItem ViewMhsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsView;
+        private System.Windows.Forms.ToolStripMenuItem ViewMhsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ViewProdiToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripDropDownButton tsUpdate;
-        private System.Windows.Forms.ToolStripMenuItem mahasiswaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem prodiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsUpdate;
+        private System.Windows.Forms.ToolStripMenuItem UpdateMhsToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem UpdateProdiToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem tsTransaksi;
+        private System.Windows.Forms.ToolStripMenuItem DaftarUlangToolStripMenuItem1;
     }
 }
+
